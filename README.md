@@ -1,74 +1,28 @@
-# Airline Reservation System
+### Library Management System (LMS) | C, Linked List, LCS Algorithm
 
-This Java-based application manages an airline reservation system, allowing users to reserve seats, cancel reservations, and display records. The system uses Oracle Database for persistent storage of passenger information.
+**July 2024**
 
-## Prerequisites
+**Project Description:**
+- Developed a Library Management System (LMS) using C with Linked Lists to manage book records efficiently.
+- Implemented key functionalities including adding, updating, and deleting book records, as well as searching for books using various algorithms.
 
-- Java Development Kit (JDK)
-- Oracle Database
-- Oracle JDBC Driver
+**Key Algorithm: Longest Common Subsequence (LCS)**
+- Utilized the Longest Common Subsequence (LCS) algorithm to enhance search capabilities based on author and title criteria.
+- The LCS algorithm compares characters between two strings to find the longest sequence that is common to both. This is particularly useful for fuzzy matching in search queries.
+- The algorithm constructs a dynamic programming table to efficiently compute the LCS, providing an optimized search mechanism.
+- Time Complexity: O(m * n), where `m` and `n` are the lengths of the two input strings.
 
-## Features
+**Automated Searching Function:**
+- Developed an automated search function that leverages the LCS algorithm to find books with similar titles or authors based on user input.
+- The function dynamically adjusts the search results to display books with the closest matches, improving the accuracy and relevance of search results.
 
-- **Reservation**: Allows users to reserve a seat by entering their passport number, name, and email address.
-- **Cancellation**: Allows users to cancel a reservation by providing their passport number.
-- **Display Records**: Displays all the current reservations with details such as passport number, name, email address, and seat number.
-- **Database Integration**: Uses Oracle Database to store and manage passenger details.
+**Features:**
+- **Book Management:** Add, update, and delete book records using Linked Lists.
+- **Search Optimization:** Integrate the LCS algorithm for improved search accuracy based on titles and authors.
+- **Automated Search:** Automate search processes to handle user queries effectively, providing relevant results based on similarity.
 
-## Installation and Setup
+**Objective:**
+- Enhance the efficiency of search operations within the LMS by utilizing the LCS algorithm to manage and retrieve book records based on string similarity. This approach aims to improve user experience by offering accurate and relevant search results.
 
-1. **Install Java and Oracle Database**: Ensure that JDK and Oracle Database are installed on your system.
-2. **Download Oracle JDBC Driver**: Download the Oracle JDBC driver (`ojdbc8.jar`) and include it in your project classpath.
-3. **Database Configuration**: Update the `DB_URL`, `DB_USER`, and `DB_PASSWORD` variables with your Oracle Database connection details.
-
-## Usage
-
-1. **Compile the Code**: Compile the Java code using a Java compiler.
-    ```bash
-    javac airline.java
-    ```
-
-2. **Run the Application**: Run the compiled Java program.
-    ```bash
-    java airline
-    ```
-
-3. **Menu Options**:
-    - **1. Reservation**: Enter passport number, name, and email to reserve a seat.
-    - **2. Cancel**: Enter passport number to cancel the reservation.
-    - **3. Display Records**: View all reservations.
-    - **4. Exit**: Exit the application.
-
-## Code Overview
-
-### Passenger Class
-
-```java
-class Passenger {
-    String passport;
-    String name;
-    int seatNum;
-    String email;
-}
-```
-
-\
-Code Explanation
-1.	Passenger Class: This class holds the details of each passenger (passport number, name, seat number, email).
-2.	Database Connection:
-o	establishConnection(): Establishes a connection to the Oracle database using JDBC.
-o	closeConnection(): Closes the database connection.
-3.	Table Creation:
-o	createTable(): Creates the Passenger table in the database if it doesn't already exist.
-4.	Reservation:
-o	reserve(): Reserves a seat for a passenger, storing their details in the database and assigning them a seat number.
-5.	Cancellation:
-o	cancel(): Cancels a reservation by deleting the passenger record from the database based on the passport number.
-6.	Display:
-o	display(): Retrieves and displays all passenger records from the database.
-
-
-- **Passenger Class**: A simple class to hold passenger details.
-- **airline Class**: The main class with methods to handle reservations, cancellations, and displaying records. It also includes methods to manage the database connection and create the Passenger table.
-
-This code provides a basic structure for an airline reservation system with database integration using JDBC. The system can be further enhanced with additional features and validations as needed.
+**Results:**
+- Implemented an effective search mechanism that supports fuzzy matching, optimizing data retrieval and enhancing the overall usability of the LMS.
