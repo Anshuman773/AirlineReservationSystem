@@ -1,28 +1,42 @@
-### Library Management System (LMS) | C, Linked List, LCS Algorithm
+Here’s the revised project description with the inclusion of Hash Tables:
+
+---
+
+### Library Management System (LMS) | C, Algorithms
 
 **July 2024**
 
 **Project Description:**
-- Developed a Library Management System (LMS) using C with Linked Lists to manage book records efficiently.
-- Implemented key functionalities including adding, updating, and deleting book records, as well as searching for books using various algorithms.
+- Developed a Library Management System (LMS) using C with advanced algorithms to manage and retrieve book records efficiently.
+- Integrated key functionalities including adding, updating, and deleting book records, and performing sophisticated searches based on various criteria.
 
-**Key Algorithm: Longest Common Subsequence (LCS)**
-- Utilized the Longest Common Subsequence (LCS) algorithm to enhance search capabilities based on author and title criteria.
-- The LCS algorithm compares characters between two strings to find the longest sequence that is common to both. This is particularly useful for fuzzy matching in search queries.
-- The algorithm constructs a dynamic programming table to efficiently compute the LCS, providing an optimized search mechanism.
-- Time Complexity: O(m * n), where `m` and `n` are the lengths of the two input strings.
+**Key Algorithms:**
+
+**1. Longest Common Subsequence (LCS):**
+- Utilized the Longest Common Subsequence (LCS) algorithm to improve search functionality based on author and title criteria.
+- The LCS algorithm finds the longest sequence common to two strings, aiding in fuzzy matching and more flexible search queries.
+- **Time Complexity:** O(m * n), where `m` and `n` are the lengths of the two input strings.
+
+**2. Hash Table:**
+- Employed a custom hash table for efficient data retrieval and management of book records.
+- Implemented a hash function to map book titles, authors, and ISBNs to unique indices within the hash table, enabling rapid access and update operations.
+- **Time Complexity:** O(1) average case for insertions, deletions, and lookups, assuming minimal collisions.
 
 **Automated Searching Function:**
-- Developed an automated search function that leverages the LCS algorithm to find books with similar titles or authors based on user input.
-- The function dynamically adjusts the search results to display books with the closest matches, improving the accuracy and relevance of search results.
+- Developed an automated search function using the LCS algorithm for similarity-based queries and a hash table for exact matches.
+- The function adjusts for similarities and efficiently retrieves relevant search results based on user input, enhancing the accuracy and speed of book retrieval.
 
 **Features:**
-- **Book Management:** Add, update, and delete book records using Linked Lists.
-- **Search Optimization:** Integrate the LCS algorithm for improved search accuracy based on titles and authors.
-- **Automated Search:** Automate search processes to handle user queries effectively, providing relevant results based on similarity.
+- **Book Management:** Efficiently manage book records with capabilities to add, update, and delete entries.
+- **Search Optimization:** Implement LCS for fuzzy matching and hash tables for rapid exact searches.
+- **Automated Search:** Combine LCS and hash table techniques to provide dynamic and accurate search results based on various search criteria.
 
 **Objective:**
-- Enhance the efficiency of search operations within the LMS by utilizing the LCS algorithm to manage and retrieve book records based on string similarity. This approach aims to improve user experience by offering accurate and relevant search results.
+- To enhance the LMS's search functionality and data management by leveraging both LCS for similarity matching and hash tables for fast data retrieval, thereby improving overall user experience and system efficiency.
 
 **Results:**
-- Implemented an effective search mechanism that supports fuzzy matching, optimizing data retrieval and enhancing the overall usability of the LMS.
+- Achieved a refined search mechanism that integrates LCS for flexible querying and hash tables for fast access, optimizing the retrieval of book records and providing accurate, relevant search results.
+
+---
+
+This description integrates both the LCS algorithm and hash table usage, highlighting their contributions to the system's efficiency and functionality.
